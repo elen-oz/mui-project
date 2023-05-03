@@ -6,7 +6,7 @@ const links = ['Products', 'Solutions', 'Pricing', 'Enterprise'];
 
 const Header = () => {
   return (
-    <AppBar position='fixed' sx={{ bgcolor: 'transparent', boxShadow: '0' }}>
+    <AppBar position='sticky' sx={{ bgcolor: 'transparent', boxShadow: '0' }}>
       <Toolbar>
         <Box sx={{ display: 'flex', width: '100%', alignItems: 'center' }}>
           <CycloneIcon fontSize='large' sx={{ color: 'black' }} />
