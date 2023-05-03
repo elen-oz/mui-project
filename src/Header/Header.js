@@ -61,10 +61,10 @@ const Header = () => {
         </Box>
         <Box width='100%' display='flex' justifyContent={'center'} margin='auto' marginTop={5}>
           <Button variant='outlined' sx={{ mr: 3 }}>
-            Signuo With Email
+            Sign in With Email
           </Button>
           <Button variant='contained' sx={{ ml: 3 }}>
-            Signuo With Google
+            Sign in With Google
           </Button>
         </Box>
       </Box>

@@ -34,7 +34,13 @@ const Content = () => {
       height='10%'
     >
       {contentArray.map((item, index) => (
-        <ContentItem title={item.title} description={item.description} img={item.img} key={index} />
+        <ContentItem
+          title={item.title}
+          description={item.description}
+          img={item.img}
+          key={index}
+          swap={index % 2 == 0}
+        />
       ))}
     </Box>
   );
