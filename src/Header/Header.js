@@ -60,10 +60,10 @@ const Header = () => {
           </Typography>
         </Box>
         <Box width='100%' display='flex' justifyContent={'center'} margin='auto' marginTop={5}>
-          <Button variant='outlined' sx={{ mr: 3 }}>
+          <Button variant='outlined' sx={{ mr: 2 }}>
             Sign in With Email
           </Button>
-          <Button variant='contained' sx={{ ml: 3 }}>
+          <Button variant='contained' sx={{ ml: 2 }}>
             Sign in With Google
           </Button>
         </Box>
