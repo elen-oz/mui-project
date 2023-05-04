@@ -39,7 +39,7 @@ const Content = () => {
           description={item.description}
           img={item.img}
           key={index}
-          swap={index % 2 == 0}
+          swap={index % 2 === 0}
         />
       ))}
     </Box>
