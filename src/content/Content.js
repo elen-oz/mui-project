@@ -4,21 +4,21 @@ import ContentItem from './ContentItem';
 
 const contentArray = [
   {
-    title: 'Get Things Done',
+    title: 'Custom Software Development',
     description:
-      'Lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js.',
+      'Our team of experienced developers and architects collaborate with you to create bespoke software solutions tailored to your unique business needs. We deliver cutting-edge applications that elevate your business to new heights.',
     img: '/1.jpg',
   },
   {
-    title: 'Productivity is Brilliant',
+    title: 'Productivity Enhancement',
     description:
-      'Lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js.',
+      "Utilize our advanced productivity tools and strategies to streamline your work processes, minimize inefficiencies, and boost your team's output. Let us help you unlock your full potential and transform your organization.",
     img: '/2.jpg',
   },
   {
-    title: 'Fast Development',
+    title: 'Continuous Support & Improvement',
     description:
-      'Lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js.',
+      'With our dedicated support and ongoing improvement services, we ensure your software solutions remain up-to-date and optimized for peak performance. Trust us to keep you ahead in this rapidly evolving digital landscape.',
     img: '/3.jpg',
   },
 ];

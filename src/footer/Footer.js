@@ -12,7 +12,7 @@ const Footer = () => {
         paddingTop={6}
         textAlign='center'
       >
-        Ready For Any Team Size
+        Stay Connected with Us for the Latest Industry Insights and Updates
       </CustomizedTypography>
       <CustomizedTypography
         fontSize={{ lg: 28, md: 24, sm: 20, xs: 18 }}
@@ -20,7 +20,8 @@ const Footer = () => {
         textAlign={'center'}
         padding={3}
       >
-        Optimized For Any Team Size
+        Subscribe to our newsletter and be the first to know about our new services, special offers,
+        and upcoming events. Join our growing community of innovative thinkers and digital pioneers.
       </CustomizedTypography>
       <Box display='flex' margin={'auto'} justifyContent={'center'} padding={3}>
         <Button sx={{ mr: 2, fontSize: { lg: 18, md: 16, sm: 14, xs: 12 } }} variant='contained'>

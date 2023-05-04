@@ -16,11 +16,10 @@ import GoogleIcon from '@mui/icons-material/Google';
 import EmailIcon from '@mui/icons-material/Email';
 import { CustomizedTypography } from '../styles/styles.js';
 
-const links = ['Products', 'Solutions', 'Pricing', 'Enterprise'];
+const links = ['Home', 'Solutions', 'About Us', 'Contact'];
 
 const Header = () => {
   const isMatch = useMediaQuery(useTheme().breakpoints.down('md'));
-  console.log(isMatch);
 
   return (
     <AppBar position='sticky' sx={{ padding: 1, bgcolor: 'transparent', boxShadow: '0' }}>
@@ -32,7 +31,7 @@ const Header = () => {
             variant='h6'
             sx={{ padding: 2, color: 'black' }}
           >
-            MUI
+            Project build with MUI
           </CustomizedTypography>
           <DrawerComponent links={links} />
         </Box>
@@ -98,7 +97,7 @@ const Header = () => {
             color='black'
             textAlign={'center'}
           >
-            Build Your Hassle Free And With Top Noch Quality
+            Empowering Your Digital Journey with Innovative Software Solutions
           </CustomizedTypography>
         </Box>
 
