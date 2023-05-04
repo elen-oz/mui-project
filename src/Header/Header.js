@@ -13,6 +13,8 @@ import {
 } from '@mui/material';
 import CycloneIcon from '@mui/icons-material/Cyclone';
 import DrawerComponent from './DrawerComponent';
+import GoogleIcon from '@mui/icons-material/Google';
+import EmailIcon from '@mui/icons-material/Email';
 
 const links = ['Products', 'Solutions', 'Pricing', 'Enterprise'];
 
@@ -78,17 +80,25 @@ const Header = () => {
           playsInline
           src='/video.mp4'
         ></video>
+
         <Box display='flex' width='100%'>
-          <Typography margin='auto' variant='h4' color='black' textAlign={'center'}>
+          <Typography
+            fontSize={{ lg: 30, md: 24, sm: 18, xs: 14 }}
+            margin='auto'
+            variant='h4'
+            color='black'
+            textAlign={'center'}
+          >
             Build Your Hassle Free And With Top Noch Quality
           </Typography>
         </Box>
+
         <Box width='100%' display='flex' justifyContent={'center'} margin='auto' marginTop={5}>
-          <Button variant='outlined' sx={{ mr: 2 }}>
-            Sign in With Email
+          <Button endIcon={<EmailIcon />} variant='outlined' sx={{ mr: 2 }}>
+            Sign up
           </Button>
-          <Button variant='contained' sx={{ ml: 2 }}>
-            Sign in With Google
+          <Button endIcon={<GoogleIcon />} color='error' variant='contained' sx={{ ml: 2 }}>
+            Sign up
           </Button>
         </Box>
       </Box>
