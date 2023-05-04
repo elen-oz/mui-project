@@ -2,7 +2,7 @@
 
 The app is written using React and Material UI.
 
-[Link to the project](https://https://mui-project-rust.vercel.app/)
+[Link to the project](https://mui-project-rust.vercel.app/)
 
 ## Available Scripts
 
