@@ -2,7 +2,6 @@ import React from 'react';
 import {
   AppBar,
   Toolbar,
-  Typography,
   Box,
   Tabs,
   Tab,
@@ -15,6 +14,7 @@ import CycloneIcon from '@mui/icons-material/Cyclone';
 import DrawerComponent from './DrawerComponent';
 import GoogleIcon from '@mui/icons-material/Google';
 import EmailIcon from '@mui/icons-material/Email';
+import { CustomizedTypography } from '../styles/styles.js';
 
 const links = ['Products', 'Solutions', 'Pricing', 'Enterprise'];
 
@@ -27,9 +27,13 @@ const Header = () => {
       {isMatch ? (
         <Box display='flex' sx={{ alignItems: 'center' }}>
           <CycloneIcon fontSize='large' sx={{ color: 'black' }} />
-          <Typography variant='h6' sx={{ padding: 2, color: 'black' }}>
+          <CustomizedTypography
+            fontWeight={'bold'}
+            variant='h6'
+            sx={{ padding: 2, color: 'black' }}
+          >
             MUI
-          </Typography>
+          </CustomizedTypography>
           <DrawerComponent links={links} />
         </Box>
       ) : (
@@ -38,9 +42,13 @@ const Header = () => {
             <CycloneIcon fontSize='large' sx={{ color: 'black' }} />
 
             <Box>
-              <Typography variant='h6' sx={{ padding: 2, color: 'black' }}>
+              <CustomizedTypography
+                fontWeight={'bold'}
+                variant='h6'
+                sx={{ padding: 2, color: 'black' }}
+              >
                 MUI
-              </Typography>
+              </CustomizedTypography>
             </Box>
 
             <Box>
@@ -82,7 +90,8 @@ const Header = () => {
         ></video>
 
         <Box display='flex' width='100%'>
-          <Typography
+          <CustomizedTypography
+            fontWeight={'bold'}
             fontSize={{ lg: 32, md: 28, sm: 24, xs: 20 }}
             margin='auto'
             variant='h4'
@@ -90,7 +99,7 @@ const Header = () => {
             textAlign={'center'}
           >
             Build Your Hassle Free And With Top Noch Quality
-          </Typography>
+          </CustomizedTypography>
         </Box>
 
         <Box width='100%' display='flex' justifyContent={'center'} margin='auto' marginTop={5}>

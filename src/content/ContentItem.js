@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Box, useMediaQuery, useTheme } from '@mui/material';
+import { CustomizedTypography } from '../styles/styles.js';
 
 const ContentItem = (props) => {
   const isMatch = useMediaQuery(useTheme().breakpoints.down('md'));
@@ -17,17 +18,18 @@ const ContentItem = (props) => {
       {props.swap ? (
         <>
           <Box sx={{ margin: '0 0 24px' }}>
-            <Typography
+            <CustomizedTypography
+              fontWeight={'bold'}
               fontSize={{ lg: 32, md: 28, sm: 24, xs: 20 }}
               color='#734950'
               padding={3}
               variant='h4'
             >
               {props.title}
-            </Typography>
-            <Typography fontSize={{ lg: 22, md: 18, sm: 16, xs: 14 }}>
+            </CustomizedTypography>
+            <CustomizedTypography fontSize={{ lg: 22, md: 18, sm: 16, xs: 14 }}>
               {props.description}
-            </Typography>
+            </CustomizedTypography>
           </Box>
 
           <img
@@ -54,17 +56,17 @@ const ContentItem = (props) => {
           />
 
           <Box>
-            <Typography
+            <CustomizedTypography
               fontSize={{ lg: 32, md: 28, sm: 24, xs: 20 }}
               color='#734950'
               padding={3}
               variant='h4'
             >
               {props.title}
-            </Typography>
-            <Typography fontSize={{ lg: 22, md: 18, sm: 16, xs: 14 }}>
+            </CustomizedTypography>
+            <CustomizedTypography fontSize={{ lg: 22, md: 18, sm: 16, xs: 14 }}>
               {props.description}
-            </Typography>
+            </CustomizedTypography>
           </Box>
         </>
       )}
