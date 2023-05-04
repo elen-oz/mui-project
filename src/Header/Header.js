@@ -28,7 +28,7 @@ const Header = () => {
           <Typography variant='h6' sx={{ padding: 2, color: 'black' }}>
             MUI
           </Typography>
-          <DrawerComponent />
+          <DrawerComponent links={links} />
         </Box>
       ) : (
         <Toolbar>
