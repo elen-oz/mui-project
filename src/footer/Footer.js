@@ -21,10 +21,10 @@ const Footer = () => {
         Optimized For Any Team Size
       </Typography>
       <Box display='flex' margin={'auto'} justifyContent={'center'} padding={3}>
-        <Button sx={{ mr: 2 }} variant='contained'>
+        <Button sx={{ mr: 2, fontSize: { lg: 24, md: 21, sm: 16, xs: 12 } }} variant='contained'>
           Try Now For Free
         </Button>
-        <Button sx={{ ml: 2 }} variant='outlined'>
+        <Button sx={{ ml: 2, fontSize: { lg: 24, md: 21, sm: 16, xs: 12 } }} variant='outlined'>
           Reserve a Call
         </Button>
       </Box>
