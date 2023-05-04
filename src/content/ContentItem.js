@@ -1,18 +1,22 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 const ContentItem = (props) => {
+  const isMatch = useMediaQuery(useTheme().breakpoints.down('md'));
+  console.log(isMatch);
+
   return (
     <Box
       bgcolor={!props.swap && '#fff'}
       display='flex'
+      flexDirection={isMatch ? 'column' : 'row'}
       padding={10}
       justifyContent='space-between'
       alignItems='center'
     >
       {props.swap ? (
         <>
-          <Box>
+          <Box sx={{ margin: '0 0 24px' }}>
             <Typography
               fontSize={{ lg: 32, md: 28, sm: 24, xs: 20 }}
               color='#734950'
@@ -21,29 +25,34 @@ const ContentItem = (props) => {
             >
               {props.title}
             </Typography>
-            <Typography fontSize={{ lg: 22, md: 18, sm: 16, xs: 14 }} variant='body' padding={3}>
+            <Typography fontSize={{ lg: 22, md: 18, sm: 16, xs: 14 }}>
               {props.description}
             </Typography>
           </Box>
+
           <img
+            fit={'cover'}
             src={props.img}
             alt={props.title}
             loading='lazy'
-            width='50%'
-            style={{ boxShadow: '10px 10px 20px #ccc', marginLeft: '30%', borderRadius: 20 }}
-            height='300px'
-          />{' '}
+            width={isMatch ? '100%' : '50%'}
+            style={{ boxShadow: '10px 10px 20px #ccc', marginLeft: '10%', borderRadius: 20 }}
+            // heightMax='300px'
+          />
+          {/* </Box> */}
         </>
       ) : (
         <>
           <img
+            fit={'cover'}
             src={props.img}
             alt={props.title}
             loading='lazy'
-            width='50%'
-            style={{ boxShadow: '10px 10px 20px #ccc', marginRight: '30%', borderRadius: 20 }}
-            height='300px'
+            width={isMatch ? '100%' : '50%'}
+            style={{ boxShadow: '10px 10px 20px #ccc', marginRight: '10%', borderRadius: 20 }}
+            // height='300px'
           />
+
           <Box>
             <Typography
               fontSize={{ lg: 32, md: 28, sm: 24, xs: 20 }}
@@ -53,7 +62,7 @@ const ContentItem = (props) => {
             >
               {props.title}
             </Typography>
-            <Typography fontSize={{ lg: 22, md: 18, sm: 16, xs: 14 }} variant='body' padding={3}>
+            <Typography fontSize={{ lg: 22, md: 18, sm: 16, xs: 14 }}>
               {props.description}
             </Typography>
           </Box>

@@ -12,13 +12,13 @@ const contentArray = [
   {
     title: 'Productivity is Brilliant',
     description:
-      'lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js.',
+      'Lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js.',
     img: '/2.jpg',
   },
   {
     title: 'Fast Development',
     description:
-      'lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js.',
+      'Lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js.',
     img: '/3.jpg',
   },
 ];
