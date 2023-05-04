@@ -9,8 +9,8 @@ const DrawerComponent = (props) => {
     <>
       <Drawer open={open} onClose={() => setOpen(false)}>
         <List>
-          {props.links.map((item) => (
-            <ListItemButton>
+          {props.links.map((item, index) => (
+            <ListItemButton onClick={() => setOpen(false)} key={index}>
               <ListItemText>{item}</ListItemText>
             </ListItemButton>
           ))}
