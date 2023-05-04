@@ -83,7 +83,7 @@ const Header = () => {
 
         <Box display='flex' width='100%'>
           <Typography
-            fontSize={{ lg: 30, md: 24, sm: 18, xs: 14 }}
+            fontSize={{ lg: 32, md: 28, sm: 24, xs: 20 }}
             margin='auto'
             variant='h4'
             color='black'
