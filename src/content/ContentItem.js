@@ -13,10 +13,15 @@ const ContentItem = (props) => {
       {props.swap ? (
         <>
           <Box>
-            <Typography color='#734950' padding={3} variant='h4'>
+            <Typography
+              fontSize={{ lg: 32, md: 28, sm: 24, xs: 20 }}
+              color='#734950'
+              padding={3}
+              variant='h4'
+            >
               {props.title}
             </Typography>
-            <Typography variant='body' padding={3}>
+            <Typography fontSize={{ lg: 22, md: 18, sm: 16, xs: 14 }} variant='body' padding={3}>
               {props.description}
             </Typography>
           </Box>
@@ -40,10 +45,15 @@ const ContentItem = (props) => {
             height='300px'
           />
           <Box>
-            <Typography color='#734950' padding={3} variant='h4'>
+            <Typography
+              fontSize={{ lg: 32, md: 28, sm: 24, xs: 20 }}
+              color='#734950'
+              padding={3}
+              variant='h4'
+            >
               {props.title}
             </Typography>
-            <Typography variant='body' padding={3}>
+            <Typography fontSize={{ lg: 22, md: 18, sm: 16, xs: 14 }} variant='body' padding={3}>
               {props.description}
             </Typography>
           </Box>
