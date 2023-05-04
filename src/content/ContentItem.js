@@ -12,12 +12,12 @@ const ContentItem = (props) => {
       display='flex'
       flexDirection={isMatch ? 'column' : 'row'}
       padding={10}
-      justifyContent='space-between'
+      justifyContent={isMatch ? 'center' : 'space-between'}
       alignItems='center'
     >
       {props.swap ? (
         <>
-          <Box sx={{ margin: '0 0 24px' }}>
+          <Box sx={{ margin: '0 5% 24px' }}>
             <CustomizedTypography
               fontWeight={'bold'}
               fontSize={{ lg: 32, md: 28, sm: 24, xs: 20 }}
@@ -31,17 +31,15 @@ const ContentItem = (props) => {
               {props.description}
             </CustomizedTypography>
           </Box>
-
           <img
             fit={'cover'}
             src={props.img}
             alt={props.title}
             loading='lazy'
-            width={isMatch ? '100%' : '50%'}
-            style={{ boxShadow: '10px 10px 20px #ccc', marginLeft: '10%', borderRadius: 20 }}
-            // heightMax='300px'
+            width={isMatch ? '80%' : '50%'}
+            style={{ boxShadow: '10px 10px 20px #ccc', borderRadius: 20 }}
+            maxHeight='300px'
           />
-          {/* </Box> */}
         </>
       ) : (
         <>
@@ -50,12 +48,12 @@ const ContentItem = (props) => {
             src={props.img}
             alt={props.title}
             loading='lazy'
-            width={isMatch ? '100%' : '50%'}
-            style={{ boxShadow: '10px 10px 20px #ccc', marginRight: '10%', borderRadius: 20 }}
+            width={isMatch ? '80%' : '50%'}
+            style={{ boxShadow: '10px 10px 20px #ccc', borderRadius: 20 }}
             // height='300px'
           />
 
-          <Box>
+          <Box sx={{ margin: '0 5% 0' }}>
             <CustomizedTypography
               fontSize={{ lg: 32, md: 28, sm: 24, xs: 20 }}
               color='#734950'
